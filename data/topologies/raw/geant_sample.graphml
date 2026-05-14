@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:y="http://www.yworks.com/xml/graphml">
+  <key id="d0" for="node" attr.name="label" attr.type="string"/>
+  <key id="d1" for="node" attr.name="Country" attr.type="string"/>
+  <key id="d2" for="node" attr.name="Latitude" attr.type="double"/>
+  <key id="d3" for="node" attr.name="Longitude" attr.type="double"/>
+  <key id="d4" for="edge" attr.name="LinkSpeedRaw" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="d0">London</data>
+      <data key="d1">UK</data>
+      <data key="d2">51.5072</data>
+      <data key="d3">-0.1276</data>
+    </node>
+    <node id="n1">
+      <data key="d0">Paris</data>
+      <data key="d1">FR</data>
+      <data key="d2">48.8566</data>
+      <data key="d3">2.3522</data>
+    </node>
+    <node id="n2">
+      <data key="d0">Frankfurt</data>
+      <data key="d1">DE</data>
+      <data key="d2">50.1109</data>
+      <data key="d3">8.6821</data>
+    </node>
+    <edge id="e0" source="n0" target="n1">
+      <data key="d4">10000000000</data>
+    </edge>
+    <edge id="e1" source="n1" target="n2">
+      <data key="d4">10000000000</data>
+    </edge>
+  </graph>
+</graphml>

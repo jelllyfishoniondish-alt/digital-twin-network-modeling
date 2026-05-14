@@ -1,0 +1,22 @@
+[
+  {
+    "scenario_name": "observation_degradation_scenario",
+    "sync_mode": "polling",
+    "topology_name": "geant_backbone_8cities_stage3",
+    "topology_file": "data/topologies/geant_backbone_8cities_stage3.json",
+    "target_link": "N/A",
+    "controller_app": "src.controller.topology_aware_switch",
+    "background_traffic": "none",
+    "configured_repeat_count": 3,
+    "poll_interval": 2.0,
+    "samples": 3,
+    "detection_samples": 3,
+    "detection_mean": 0.3805266666666667,
+    "detection_p95": 0.309363,
+    "detection_stddev": 0.10899528299375572,
+    "recovery_samples": 0,
+    "recovery_mean": null,
+    "recovery_p95": null,
+    "recovery_stddev": null
+  }
+]

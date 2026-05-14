@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TER Network Digital Twin</title>
+    <style>
+      :root {
+        --bg: #f4f0e8;
+        --panel: #fffaf3;
+        --line: #d9c8a9;
+        --ink: #1f2a30;
+        --muted: #66757f;
+        --accent: #0d6e6e;
+        --danger: #a6372b;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top left, rgba(13, 110, 110, 0.12), transparent 30%),
+          linear-gradient(180deg, #efe6d8 0%, var(--bg) 100%);
+        color: var(--ink);
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+      }
+
+      h1, h2 {
+        margin: 0 0 12px;
+        font-weight: 600;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .panel {
+        background: rgba(255, 250, 243, 0.95);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 12px 32px rgba(31, 42, 48, 0.08);
+      }
+
+      .status {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 12px;
+        background: rgba(13, 110, 110, 0.1);
+        color: var(--accent);
+      }
+
+      .status.down {
+        background: rgba(166, 55, 43, 0.12);
+        color: var(--danger);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #f8f3ea;
+        border-radius: 12px;
+        padding: 12px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>TER Network Digital Twin</h1>
+      <p>一个面向实验验证与 TER 报告写作的最小网络数字孪生界面。</p>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Health</h2>
+          <div id="health"></div>
+          <p><a href="/topology">Open live topology view</a></p>
+        </article>
+        <article class="panel">
+          <h2>Recent Events</h2>
+          <ul id="events"></ul>
+        </article>
+      </section>
+
+      <section class="grid" style="margin-top: 16px;">
+        <article class="panel">
+          <h2>Switches</h2>
+          <ul id="switches"></ul>
+        </article>
+        <article class="panel">
+          <h2>Links</h2>
+          <ul id="links"></ul>
+        </article>
+        <article class="panel">
+          <h2>Current State</h2>
+          <pre id="state"></pre>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      async function fetchJson(path) {
+        const response = await fetch(path);
+        return response.json();
+      }
+
+      function renderHealth(payload) {
+        const running = payload.running ? "running" : "idle";
+        document.getElementById("health").innerHTML = `
+          <p><span class="status">${running}</span></p>
+          <p>Last sync: ${payload.last_sync_timestamp ?? "not synced yet"}</p>
+          <p>Error count: ${payload.last_error_count}</p>
+        `;
+      }
+
+      function renderSwitches(payload) {
+        document.getElementById("switches").innerHTML = payload.switches
+          .map((item) => `<li>${item.name} (${item.dpid}) - flows: ${item.flow_count}</li>`)
+          .join("");
+      }
+
+      function renderLinks(payload) {
+        document.getElementById("links").innerHTML = payload.links
+          .map((item) => {
+            const statusClass = item.is_up ? "status" : "status down";
+            const statusText = item.is_up ? "UP" : "DOWN";
+            return `<li>${item.src_dpid} -> ${item.dst_dpid} <span class="${statusClass}">${statusText}</span></li>`;
+          })
+          .join("");
+      }
+
+      function renderEvents(payload) {
+        document.getElementById("events").innerHTML = payload
+          .map((event) => `<li>${event.timestamp} - ${event.event_type} - ${event.entity_id}</li>`)
+          .join("");
+      }
+
+      function renderState(payload) {
+        document.getElementById("state").textContent = JSON.stringify(payload, null, 2);
+      }
+
+      async function refresh() {
+        const [health, topology, events, state] = await Promise.all([
+          fetchJson("/api/health"),
+          fetchJson("/api/topology"),
+          fetchJson("/api/events"),
+          fetchJson("/api/state"),
+        ]);
+
+        renderHealth(health);
+        renderSwitches(topology);
+        renderLinks(topology);
+        renderEvents(events);
+        renderState(state);
+      }
+
+      refresh();
+      setInterval(refresh, 3000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+scenario_name,sync_mode,topology_name,topology_file,target_link,controller_app,background_traffic,background_load_percent,background_target_bandwidth_mbps,configured_repeat_count,poll_interval,samples,detection_samples,detection_mean,detection_p95,detection_stddev,recovery_samples,recovery_mean,recovery_p95,recovery_stddev
+recovery_scenario,polling,geant_backbone_8cities_stage3,data/topologies/geant_backbone_8cities_stage3.json,Paris-Frankfurt,src.controller.topology_aware_switch,iperf_tcp,80,80.0,1,2.0,1,1,1.061496,1.061496,0.0,1,1.738945,1.738945,0.0

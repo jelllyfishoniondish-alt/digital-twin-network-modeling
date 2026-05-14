@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-04-23T14:00:26.013840+00:00",
+  "output_prefix": "/home/yumeng/twin/data/exports/traffic_profile_repeat10",
+  "topology_files": [
+    "/home/yumeng/twin/data/topologies/geant_backbone_8cities_stage3.json"
+  ],
+  "scenarios": [
+    "recovery_scenario",
+    "link_flap_scenario",
+    "multi_fault_scenario"
+  ],
+  "traffic_profiles": [
+    "none",
+    "icmp",
+    "iperf_tcp"
+  ],
+  "repeat": 10,
+  "background_ping_interval": 0.2,
+  "controller_app": "src.controller.topology_aware_switch",
+  "polling_interval_seconds": 2.0,
+  "records_csv": "/home/yumeng/twin/data/exports/traffic_profile_repeat10.csv",
+  "records_json": "/home/yumeng/twin/data/exports/traffic_profile_repeat10.json",
+  "summary_csv": "/home/yumeng/twin/data/exports/traffic_profile_repeat10_summary.csv",
+  "summary_json": "/home/yumeng/twin/data/exports/traffic_profile_repeat10_summary.json",
+  "generated_csvs": [
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_recovery_scenario_none.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_recovery_scenario_icmp.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_recovery_scenario_iperf_tcp.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_link_flap_scenario_none.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_link_flap_scenario_icmp.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_link_flap_scenario_iperf_tcp.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_multi_fault_scenario_none.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_multi_fault_scenario_icmp.csv",
+    "/home/yumeng/twin/data/exports/geant_backbone_8cities_stage3_multi_fault_scenario_iperf_tcp.csv"
+  ]
+}

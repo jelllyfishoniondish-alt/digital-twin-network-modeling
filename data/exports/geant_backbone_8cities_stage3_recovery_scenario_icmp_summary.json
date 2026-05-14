@@ -1,0 +1,24 @@
+[
+  {
+    "scenario_name": "recovery_scenario",
+    "sync_mode": "polling",
+    "topology_name": "geant_backbone_8cities_stage3",
+    "topology_file": "/home/yumeng/twin/data/topologies/geant_backbone_8cities_stage3.json",
+    "target_link": "Paris-Frankfurt",
+    "controller_app": "src.controller.topology_aware_switch",
+    "background_traffic": "icmp",
+    "background_load_percent": null,
+    "background_target_bandwidth_mbps": null,
+    "configured_repeat_count": 10,
+    "poll_interval": 2.0,
+    "samples": 10,
+    "detection_samples": 10,
+    "detection_mean": 1.0148357000000001,
+    "detection_p95": 1.413323,
+    "detection_stddev": 0.42591720491124796,
+    "recovery_samples": 10,
+    "recovery_mean": 1.735052,
+    "recovery_p95": 1.898555,
+    "recovery_stddev": 0.13093654455956902
+  }
+]

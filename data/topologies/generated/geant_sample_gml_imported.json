@@ -1,0 +1,101 @@
+{
+  "name": "geant_sample_gml_imported",
+  "description": "Imported from GML source geant_sample.gml.",
+  "provenance": {
+    "import_source": "data/topologies/raw/geant_sample.gml",
+    "import_format": "gml",
+    "importer": "src.topology.importers.gml_importer"
+  },
+  "switches": [
+    {
+      "name": "s1",
+      "dpid": "0000000000000001",
+      "city": "Frankfurt",
+      "country": "DE",
+      "latitude": 50.1109,
+      "longitude": 8.6821
+    },
+    {
+      "name": "s2",
+      "dpid": "0000000000000002",
+      "city": "London",
+      "country": "UK",
+      "latitude": 51.5072,
+      "longitude": -0.1276
+    },
+    {
+      "name": "s3",
+      "dpid": "0000000000000003",
+      "city": "Paris",
+      "country": "FR",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    }
+  ],
+  "hosts": [
+    {
+      "name": "h1",
+      "switch": "s1",
+      "ip": "10.0.0.1/24",
+      "mac": "00:00:00:00:00:01"
+    },
+    {
+      "name": "h2",
+      "switch": "s2",
+      "ip": "10.0.0.2/24",
+      "mac": "00:00:00:00:00:02"
+    },
+    {
+      "name": "h3",
+      "switch": "s3",
+      "ip": "10.0.0.3/24",
+      "mac": "00:00:00:00:00:03"
+    }
+  ],
+  "links": [
+    {
+      "src": "s2",
+      "dst": "s3",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.718,
+      "distance_km": 343.53,
+      "label": "London-Paris",
+      "source": "Imported GML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s1",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.389,
+      "distance_km": 477.892,
+      "label": "Paris-Frankfurt",
+      "source": "Imported GML topology",
+      "enabled": true
+    }
+  ],
+  "scenario_targets": {
+    "single_link_failure": [
+      "s2",
+      "s3"
+    ],
+    "recovery_scenario": [
+      "s2",
+      "s3"
+    ],
+    "link_flap_scenario": [
+      "s2",
+      "s3"
+    ],
+    "multi_fault_scenario": [
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s1"
+      ]
+    ]
+  }
+}

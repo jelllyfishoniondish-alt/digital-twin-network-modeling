@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-04-24T21:44:58.359865+00:00",
+  "topology_file": "data/topologies/geant_backbone_8cities_stage3.json",
+  "scenario_name": "recovery_scenario",
+  "repeat": 10,
+  "load_levels": [
+    80
+  ],
+  "target_link_bandwidth_mbps": 100.0,
+  "controller_app": "src.controller.topology_aware_switch",
+  "polling_interval_seconds": 2.0,
+  "records_csv": "data/exports/load_linearity_recovery_80retry.csv",
+  "records_json": "data/exports/load_linearity_recovery_80retry.json",
+  "summary_csv": "data/exports/load_linearity_recovery_80retry_summary.csv",
+  "summary_json": "data/exports/load_linearity_recovery_80retry_summary.json",
+  "scatter_plot": "data/exports/load_linearity_recovery_80retry_scatter.png",
+  "box_plot": "data/exports/load_linearity_recovery_80retry_boxplot.png",
+  "generated_csvs": [
+    "data/exports/load_linearity_recovery_80retry_80pct.csv"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "geant_subset",
+  "description": "A compact Europe backbone-style topology seeded from open GÉANT-oriented research datasets for twin experiments.",
+  "provenance": {
+    "seed_datasets": [
+      "https://topology-zoo.org/dataset.html",
+      "https://network.geant.org/geant-network-topology/"
+    ],
+    "notes": "This file is a manually curated subset for Mininet-scale experiments. It is not a full reproduction of the operational GÉANT backbone. The current P0 layout is loop-free to remain compatible with the project's simple layer-2 controller setup."
+  },
+  "switches": [
+    {"name": "s1", "dpid": "0000000000000001", "city": "London", "country": "UK", "latitude": 51.5072, "longitude": -0.1276},
+    {"name": "s2", "dpid": "0000000000000002", "city": "Paris", "country": "FR", "latitude": 48.8566, "longitude": 2.3522},
+    {"name": "s3", "dpid": "0000000000000003", "city": "Amsterdam", "country": "NL", "latitude": 52.3676, "longitude": 4.9041},
+    {"name": "s4", "dpid": "0000000000000004", "city": "Frankfurt", "country": "DE", "latitude": 50.1109, "longitude": 8.6821},
+    {"name": "s5", "dpid": "0000000000000005", "city": "Prague", "country": "CZ", "latitude": 50.0755, "longitude": 14.4378},
+    {"name": "s6", "dpid": "0000000000000006", "city": "Vienna", "country": "AT", "latitude": 48.2082, "longitude": 16.3738},
+    {"name": "s7", "dpid": "0000000000000007", "city": "Milan", "country": "IT", "latitude": 45.4642, "longitude": 9.19},
+    {"name": "s8", "dpid": "0000000000000008", "city": "Madrid", "country": "ES", "latitude": 40.4168, "longitude": -3.7038}
+  ],
+  "hosts": [
+    {"name": "h1", "switch": "s1", "ip": "10.0.0.1/24", "mac": "00:00:00:00:00:01"},
+    {"name": "h2", "switch": "s2", "ip": "10.0.0.2/24", "mac": "00:00:00:00:00:02"},
+    {"name": "h3", "switch": "s3", "ip": "10.0.0.3/24", "mac": "00:00:00:00:00:03"},
+    {"name": "h4", "switch": "s4", "ip": "10.0.0.4/24", "mac": "00:00:00:00:00:04"},
+    {"name": "h5", "switch": "s5", "ip": "10.0.0.5/24", "mac": "00:00:00:00:00:05"},
+    {"name": "h6", "switch": "s6", "ip": "10.0.0.6/24", "mac": "00:00:00:00:00:06"},
+    {"name": "h7", "switch": "s7", "ip": "10.0.0.7/24", "mac": "00:00:00:00:00:07"},
+    {"name": "h8", "switch": "s8", "ip": "10.0.0.8/24", "mac": "00:00:00:00:00:08"}
+  ],
+  "links": [
+    {"src": "s1", "dst": "s2", "bandwidth_mbps": 100, "delay_ms": 8.0, "distance_km": 344.0, "label": "London-Paris", "source": "Curated GEANT subset"},
+    {"src": "s1", "dst": "s3", "bandwidth_mbps": 100, "delay_ms": 6.0, "distance_km": 357.0, "label": "London-Amsterdam", "source": "Curated GEANT subset"},
+    {"src": "s2", "dst": "s4", "bandwidth_mbps": 100, "delay_ms": 9.0, "distance_km": 478.0, "label": "Paris-Frankfurt", "source": "Curated GEANT subset"},
+    {"src": "s2", "dst": "s8", "bandwidth_mbps": 100, "delay_ms": 18.0, "distance_km": 1053.0, "label": "Paris-Madrid", "source": "Curated GEANT subset"},
+    {"src": "s4", "dst": "s5", "bandwidth_mbps": 100, "delay_ms": 7.0, "distance_km": 409.0, "label": "Frankfurt-Prague", "source": "Curated GEANT subset"},
+    {"src": "s5", "dst": "s6", "bandwidth_mbps": 100, "delay_ms": 4.0, "distance_km": 252.0, "label": "Prague-Vienna", "source": "Curated GEANT subset"},
+    {"src": "s4", "dst": "s7", "bandwidth_mbps": 100, "delay_ms": 11.0, "distance_km": 519.0, "label": "Frankfurt-Milan", "source": "Curated GEANT subset"}
+  ],
+  "scenario_targets": {
+    "single_link_failure": ["s2", "s4"],
+    "recovery_scenario": ["s2", "s4"],
+    "link_flap_scenario": ["s2", "s4"],
+    "multi_fault_scenario": [
+      ["s2", "s4"],
+      ["s4", "s5"]
+    ]
+  }
+}

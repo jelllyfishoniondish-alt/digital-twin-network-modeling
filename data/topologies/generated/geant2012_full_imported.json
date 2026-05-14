@@ -1,0 +1,1209 @@
+{
+  "name": "geant2012_full",
+  "description": "Imported from GraphML source Geant2012.graphml.",
+  "provenance": {
+    "import_source": "data/topologies/raw/Geant2012.graphml",
+    "import_format": "graphml",
+    "importer": "src.topology.importers.graphml_importer"
+  },
+  "switches": [
+    {
+      "name": "s1",
+      "dpid": "0000000000000001",
+      "city": "Austria",
+      "country": "Austria",
+      "latitude": 48.20849,
+      "longitude": 16.37208
+    },
+    {
+      "name": "s2",
+      "dpid": "0000000000000002",
+      "city": "Belgium",
+      "country": "Belgium",
+      "latitude": 50.85045,
+      "longitude": 4.34878
+    },
+    {
+      "name": "s3",
+      "dpid": "0000000000000003",
+      "city": "Bulgaria",
+      "country": "Bulgaria",
+      "latitude": 42.69751,
+      "longitude": 23.32415
+    },
+    {
+      "name": "s4",
+      "dpid": "0000000000000004",
+      "city": "BY",
+      "country": null,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "s5",
+      "dpid": "0000000000000005",
+      "city": "Switzerland",
+      "country": "Switzerland",
+      "latitude": 46.94809,
+      "longitude": 7.44744
+    },
+    {
+      "name": "s6",
+      "dpid": "0000000000000006",
+      "city": "Cyprus",
+      "country": "Cyprus",
+      "latitude": 35.16667,
+      "longitude": 33.36667
+    },
+    {
+      "name": "s7",
+      "dpid": "0000000000000007",
+      "city": "Czech Republic",
+      "country": "Czech Republic",
+      "latitude": 50.08804,
+      "longitude": 14.42076
+    },
+    {
+      "name": "s8",
+      "dpid": "0000000000000008",
+      "city": "Germany",
+      "country": "Germany",
+      "latitude": 50.11667,
+      "longitude": 8.68333
+    },
+    {
+      "name": "s9",
+      "dpid": "0000000000000009",
+      "city": "Denmark",
+      "country": "Denmark",
+      "latitude": 55.67594,
+      "longitude": 12.56553
+    },
+    {
+      "name": "s10",
+      "dpid": "000000000000000a",
+      "city": "Estonia",
+      "country": "Estonia",
+      "latitude": 59.43696,
+      "longitude": 24.75353
+    },
+    {
+      "name": "s11",
+      "dpid": "000000000000000b",
+      "city": "Spain",
+      "country": "Spain",
+      "latitude": 40.4165,
+      "longitude": -3.70256
+    },
+    {
+      "name": "s12",
+      "dpid": "000000000000000c",
+      "city": "Finland",
+      "country": "Finland",
+      "latitude": 60.45148,
+      "longitude": 22.26869
+    },
+    {
+      "name": "s13",
+      "dpid": "000000000000000d",
+      "city": "France",
+      "country": "France",
+      "latitude": 48.85341,
+      "longitude": 2.3488
+    },
+    {
+      "name": "s14",
+      "dpid": "000000000000000e",
+      "city": "Greece",
+      "country": "Greece",
+      "latitude": 37.97945,
+      "longitude": 23.71622
+    },
+    {
+      "name": "s15",
+      "dpid": "000000000000000f",
+      "city": "Croatia",
+      "country": "Croatia",
+      "latitude": 45.81444,
+      "longitude": 15.97798
+    },
+    {
+      "name": "s16",
+      "dpid": "0000000000000010",
+      "city": "Hungary",
+      "country": "Hungary",
+      "latitude": 47.49801,
+      "longitude": 19.03991
+    },
+    {
+      "name": "s17",
+      "dpid": "0000000000000011",
+      "city": "Ireland",
+      "country": "Ireland",
+      "latitude": 53.34399,
+      "longitude": -6.26719
+    },
+    {
+      "name": "s18",
+      "dpid": "0000000000000012",
+      "city": "Israel",
+      "country": "Israel",
+      "latitude": 31.5,
+      "longitude": 34.75
+    },
+    {
+      "name": "s19",
+      "dpid": "0000000000000013",
+      "city": "Iceland",
+      "country": "Iceland",
+      "latitude": 64.13548,
+      "longitude": -21.89541
+    },
+    {
+      "name": "s20",
+      "dpid": "0000000000000014",
+      "city": "Italy",
+      "country": "Italy",
+      "latitude": 45.46427,
+      "longitude": 9.18951
+    },
+    {
+      "name": "s21",
+      "dpid": "0000000000000015",
+      "city": "Lithuania",
+      "country": "Lithuania",
+      "latitude": 54.9,
+      "longitude": 23.9
+    },
+    {
+      "name": "s22",
+      "dpid": "0000000000000016",
+      "city": "Luxembourg",
+      "country": "Luxembourg",
+      "latitude": 49.61167,
+      "longitude": 6.13
+    },
+    {
+      "name": "s23",
+      "dpid": "0000000000000017",
+      "city": "Latvia",
+      "country": "Latvia",
+      "latitude": 56.946,
+      "longitude": 24.10589
+    },
+    {
+      "name": "s24",
+      "dpid": "0000000000000018",
+      "city": "MD",
+      "country": null,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "s25",
+      "dpid": "0000000000000019",
+      "city": "Montenegro",
+      "country": "Montenegro",
+      "latitude": 42.44111,
+      "longitude": 19.26361
+    },
+    {
+      "name": "s26",
+      "dpid": "000000000000001a",
+      "city": "Macedonia",
+      "country": "Macedonia",
+      "latitude": 42.0,
+      "longitude": 21.43333
+    },
+    {
+      "name": "s27",
+      "dpid": "000000000000001b",
+      "city": "Malta",
+      "country": "Malta",
+      "latitude": 35.90917,
+      "longitude": 14.42556
+    },
+    {
+      "name": "s28",
+      "dpid": "000000000000001c",
+      "city": "Netherlands",
+      "country": "Netherlands",
+      "latitude": 52.37403,
+      "longitude": 4.88969
+    },
+    {
+      "name": "s29",
+      "dpid": "000000000000001d",
+      "city": "Norway",
+      "country": "Norway",
+      "latitude": 62.0,
+      "longitude": 10.0
+    },
+    {
+      "name": "s30",
+      "dpid": "000000000000001e",
+      "city": "Poland",
+      "country": "Poland",
+      "latitude": 52.41667,
+      "longitude": 16.96667
+    },
+    {
+      "name": "s31",
+      "dpid": "000000000000001f",
+      "city": "Portugal",
+      "country": "Portugal",
+      "latitude": 38.71667,
+      "longitude": -9.13333
+    },
+    {
+      "name": "s32",
+      "dpid": "0000000000000020",
+      "city": "Romania",
+      "country": "Romania",
+      "latitude": 44.43225,
+      "longitude": 26.10626
+    },
+    {
+      "name": "s33",
+      "dpid": "0000000000000021",
+      "city": "Serbia",
+      "country": "Serbia",
+      "latitude": 44.80401,
+      "longitude": 20.46513
+    },
+    {
+      "name": "s34",
+      "dpid": "0000000000000022",
+      "city": "Russia",
+      "country": "Russia",
+      "latitude": 55.75222,
+      "longitude": 37.61556
+    },
+    {
+      "name": "s35",
+      "dpid": "0000000000000023",
+      "city": "Sweden",
+      "country": "Sweden",
+      "latitude": 59.33258,
+      "longitude": 18.0649
+    },
+    {
+      "name": "s36",
+      "dpid": "0000000000000024",
+      "city": "Slovakia",
+      "country": "Slovakia",
+      "latitude": 48.14816,
+      "longitude": 17.10674
+    },
+    {
+      "name": "s37",
+      "dpid": "0000000000000025",
+      "city": "Slovenia",
+      "country": "Slovenia",
+      "latitude": 46.05108,
+      "longitude": 14.50513
+    },
+    {
+      "name": "s38",
+      "dpid": "0000000000000026",
+      "city": "Turkey",
+      "country": "Turkey",
+      "latitude": 39.05901,
+      "longitude": 34.91155
+    },
+    {
+      "name": "s39",
+      "dpid": "0000000000000027",
+      "city": "UA",
+      "country": null,
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "name": "s40",
+      "dpid": "0000000000000028",
+      "city": "United Kingdom",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574
+    }
+  ],
+  "hosts": [
+    {
+      "name": "h1",
+      "switch": "s1",
+      "ip": "10.0.0.1/24",
+      "mac": "00:00:00:00:00:01"
+    },
+    {
+      "name": "h2",
+      "switch": "s2",
+      "ip": "10.0.0.2/24",
+      "mac": "00:00:00:00:00:02"
+    },
+    {
+      "name": "h3",
+      "switch": "s3",
+      "ip": "10.0.0.3/24",
+      "mac": "00:00:00:00:00:03"
+    },
+    {
+      "name": "h4",
+      "switch": "s4",
+      "ip": "10.0.0.4/24",
+      "mac": "00:00:00:00:00:04"
+    },
+    {
+      "name": "h5",
+      "switch": "s5",
+      "ip": "10.0.0.5/24",
+      "mac": "00:00:00:00:00:05"
+    },
+    {
+      "name": "h6",
+      "switch": "s6",
+      "ip": "10.0.0.6/24",
+      "mac": "00:00:00:00:00:06"
+    },
+    {
+      "name": "h7",
+      "switch": "s7",
+      "ip": "10.0.0.7/24",
+      "mac": "00:00:00:00:00:07"
+    },
+    {
+      "name": "h8",
+      "switch": "s8",
+      "ip": "10.0.0.8/24",
+      "mac": "00:00:00:00:00:08"
+    },
+    {
+      "name": "h9",
+      "switch": "s9",
+      "ip": "10.0.0.9/24",
+      "mac": "00:00:00:00:00:09"
+    },
+    {
+      "name": "h10",
+      "switch": "s10",
+      "ip": "10.0.0.10/24",
+      "mac": "00:00:00:00:00:0a"
+    },
+    {
+      "name": "h11",
+      "switch": "s11",
+      "ip": "10.0.0.11/24",
+      "mac": "00:00:00:00:00:0b"
+    },
+    {
+      "name": "h12",
+      "switch": "s12",
+      "ip": "10.0.0.12/24",
+      "mac": "00:00:00:00:00:0c"
+    },
+    {
+      "name": "h13",
+      "switch": "s13",
+      "ip": "10.0.0.13/24",
+      "mac": "00:00:00:00:00:0d"
+    },
+    {
+      "name": "h14",
+      "switch": "s14",
+      "ip": "10.0.0.14/24",
+      "mac": "00:00:00:00:00:0e"
+    },
+    {
+      "name": "h15",
+      "switch": "s15",
+      "ip": "10.0.0.15/24",
+      "mac": "00:00:00:00:00:0f"
+    },
+    {
+      "name": "h16",
+      "switch": "s16",
+      "ip": "10.0.0.16/24",
+      "mac": "00:00:00:00:00:10"
+    },
+    {
+      "name": "h17",
+      "switch": "s17",
+      "ip": "10.0.0.17/24",
+      "mac": "00:00:00:00:00:11"
+    },
+    {
+      "name": "h18",
+      "switch": "s18",
+      "ip": "10.0.0.18/24",
+      "mac": "00:00:00:00:00:12"
+    },
+    {
+      "name": "h19",
+      "switch": "s19",
+      "ip": "10.0.0.19/24",
+      "mac": "00:00:00:00:00:13"
+    },
+    {
+      "name": "h20",
+      "switch": "s20",
+      "ip": "10.0.0.20/24",
+      "mac": "00:00:00:00:00:14"
+    },
+    {
+      "name": "h21",
+      "switch": "s21",
+      "ip": "10.0.0.21/24",
+      "mac": "00:00:00:00:00:15"
+    },
+    {
+      "name": "h22",
+      "switch": "s22",
+      "ip": "10.0.0.22/24",
+      "mac": "00:00:00:00:00:16"
+    },
+    {
+      "name": "h23",
+      "switch": "s23",
+      "ip": "10.0.0.23/24",
+      "mac": "00:00:00:00:00:17"
+    },
+    {
+      "name": "h24",
+      "switch": "s24",
+      "ip": "10.0.0.24/24",
+      "mac": "00:00:00:00:00:18"
+    },
+    {
+      "name": "h25",
+      "switch": "s25",
+      "ip": "10.0.0.25/24",
+      "mac": "00:00:00:00:00:19"
+    },
+    {
+      "name": "h26",
+      "switch": "s26",
+      "ip": "10.0.0.26/24",
+      "mac": "00:00:00:00:00:1a"
+    },
+    {
+      "name": "h27",
+      "switch": "s27",
+      "ip": "10.0.0.27/24",
+      "mac": "00:00:00:00:00:1b"
+    },
+    {
+      "name": "h28",
+      "switch": "s28",
+      "ip": "10.0.0.28/24",
+      "mac": "00:00:00:00:00:1c"
+    },
+    {
+      "name": "h29",
+      "switch": "s29",
+      "ip": "10.0.0.29/24",
+      "mac": "00:00:00:00:00:1d"
+    },
+    {
+      "name": "h30",
+      "switch": "s30",
+      "ip": "10.0.0.30/24",
+      "mac": "00:00:00:00:00:1e"
+    },
+    {
+      "name": "h31",
+      "switch": "s31",
+      "ip": "10.0.0.31/24",
+      "mac": "00:00:00:00:00:1f"
+    },
+    {
+      "name": "h32",
+      "switch": "s32",
+      "ip": "10.0.0.32/24",
+      "mac": "00:00:00:00:00:20"
+    },
+    {
+      "name": "h33",
+      "switch": "s33",
+      "ip": "10.0.0.33/24",
+      "mac": "00:00:00:00:00:21"
+    },
+    {
+      "name": "h34",
+      "switch": "s34",
+      "ip": "10.0.0.34/24",
+      "mac": "00:00:00:00:00:22"
+    },
+    {
+      "name": "h35",
+      "switch": "s35",
+      "ip": "10.0.0.35/24",
+      "mac": "00:00:00:00:00:23"
+    },
+    {
+      "name": "h36",
+      "switch": "s36",
+      "ip": "10.0.0.36/24",
+      "mac": "00:00:00:00:00:24"
+    },
+    {
+      "name": "h37",
+      "switch": "s37",
+      "ip": "10.0.0.37/24",
+      "mac": "00:00:00:00:00:25"
+    },
+    {
+      "name": "h38",
+      "switch": "s38",
+      "ip": "10.0.0.38/24",
+      "mac": "00:00:00:00:00:26"
+    },
+    {
+      "name": "h39",
+      "switch": "s39",
+      "ip": "10.0.0.39/24",
+      "mac": "00:00:00:00:00:27"
+    },
+    {
+      "name": "h40",
+      "switch": "s40",
+      "ip": "10.0.0.40/24",
+      "mac": "00:00:00:00:00:28"
+    }
+  ],
+  "links": [
+    {
+      "src": "s2",
+      "dst": "s17",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.877,
+      "distance_km": 775.451,
+      "label": "BE-IE",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s14",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.628,
+      "distance_km": 525.674,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s16",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 3.153,
+      "distance_km": 630.654,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s26",
+      "bandwidth_mbps": 155,
+      "delay_ms": 0.868,
+      "distance_km": 173.662,
+      "label": "155 Mbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s32",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.478,
+      "distance_km": 295.696,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s38",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 5.269,
+      "distance_km": 1053.728,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s5",
+      "dst": "s11",
+      "bandwidth_mbps": 100,
+      "delay_ms": 5.76,
+      "distance_km": 1151.927,
+      "label": "CH-ES",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s5",
+      "dst": "s20",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.063,
+      "distance_km": 212.579,
+      "label": "CH-IT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s6",
+      "dst": "s40",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 16.09,
+      "distance_km": 3218.091,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s7",
+      "dst": "s36",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.455,
+      "distance_km": 291.064,
+      "label": "CZ-SK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s1",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.988,
+      "distance_km": 597.629,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s5",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.819,
+      "distance_km": 363.878,
+      "label": "DE-CH",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s6",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 12.97,
+      "distance_km": 2593.908,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s7",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.046,
+      "distance_km": 409.119,
+      "label": "DE-CZ",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s18",
+      "bandwidth_mbps": 2500,
+      "delay_ms": 14.937,
+      "distance_km": 2987.396,
+      "label": "2.5 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s22",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 0.957,
+      "distance_km": 191.423,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s34",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 10.103,
+      "distance_km": 2020.564,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s8",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.353,
+      "distance_km": 670.517,
+      "label": "DK-DE",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s10",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 4.185,
+      "distance_km": 836.944,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s19",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 10.521,
+      "distance_km": 2104.199,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s29",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.592,
+      "distance_km": 718.387,
+      "label": "DK-NO",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s34",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 7.803,
+      "distance_km": 1560.553,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s9",
+      "dst": "s35",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.612,
+      "distance_km": 522.382,
+      "label": "DK-SE",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s10",
+      "dst": "s23",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.398,
+      "distance_km": 279.567,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s13",
+      "dst": "s5",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.175,
+      "distance_km": 435.015,
+      "label": "FR-CH",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s13",
+      "dst": "s11",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 5.262,
+      "distance_km": 1052.447,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s13",
+      "dst": "s40",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.719,
+      "distance_km": 343.771,
+      "label": "FR-UK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s14",
+      "dst": "s1",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 6.414,
+      "distance_km": 1282.837,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s15",
+      "dst": "s37",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.585,
+      "distance_km": 116.903,
+      "label": "HR-SL",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s16",
+      "dst": "s15",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.497,
+      "distance_km": 299.387,
+      "label": "HU-HR",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s16",
+      "dst": "s33",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.595,
+      "distance_km": 319.028,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s16",
+      "dst": "s36",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.807,
+      "distance_km": 161.415,
+      "label": "HU-SK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s17",
+      "dst": "s40",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.318,
+      "distance_km": 463.535,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s18",
+      "dst": "s21",
+      "bandwidth_mbps": 2500,
+      "delay_ms": 13.696,
+      "distance_km": 2739.156,
+      "label": "2.5 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s19",
+      "dst": "s40",
+      "bandwidth_mbps": 2500,
+      "delay_ms": 9.436,
+      "distance_km": 1887.146,
+      "label": "2.5 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s1",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.127,
+      "distance_km": 625.424,
+      "label": "IT-AT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s11",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 5.941,
+      "distance_km": 1188.122,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s14",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 7.307,
+      "distance_km": 1461.426,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s27",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 5.749,
+      "distance_km": 1149.896,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s21",
+      "dst": "s23",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.139,
+      "distance_km": 227.866,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s22",
+      "dst": "s13",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.436,
+      "distance_km": 287.168,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s24",
+      "dst": "s32",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 10.0,
+      "distance_km": null,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s25",
+      "dst": "s15",
+      "bandwidth_mbps": 155,
+      "delay_ms": 2.288,
+      "distance_km": 457.584,
+      "label": "155 Mbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s28",
+      "dst": "s2",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.867,
+      "distance_km": 173.481,
+      "label": "NL-BE",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s28",
+      "dst": "s8",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.821,
+      "distance_km": 364.235,
+      "label": "NL-DE",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s28",
+      "dst": "s9",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.104,
+      "distance_km": 620.867,
+      "label": "NL-DK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s28",
+      "dst": "s21",
+      "bandwidth_mbps": 2500,
+      "delay_ms": 6.4,
+      "distance_km": 1280.091,
+      "label": "2.5 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s28",
+      "dst": "s40",
+      "bandwidth_mbps": 2500,
+      "delay_ms": 1.785,
+      "distance_km": 356.931,
+      "label": "2.5 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s29",
+      "dst": "s35",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.648,
+      "distance_km": 529.503,
+      "label": "Lit Fibre",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s4",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 10.0,
+      "distance_km": null,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s7",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.569,
+      "distance_km": 313.708,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s8",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 3.15,
+      "distance_km": 630.026,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s21",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.667,
+      "distance_km": 533.476,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s39",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 10.0,
+      "distance_km": null,
+      "label": "1 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s31",
+      "dst": "s11",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.512,
+      "distance_km": 502.312,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s31",
+      "dst": "s40",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 7.928,
+      "distance_km": 1585.537,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s32",
+      "dst": "s16",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 3.217,
+      "distance_km": 643.439,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s32",
+      "dst": "s38",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 4.714,
+      "distance_km": 942.784,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s35",
+      "dst": "s12",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.327,
+      "distance_km": 265.378,
+      "label": "SE-FI",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s36",
+      "dst": "s1",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.274,
+      "distance_km": 54.884,
+      "label": "SK-AT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s37",
+      "dst": "s1",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.392,
+      "distance_km": 278.361,
+      "label": "SL-AT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    }
+  ],
+  "scenario_targets": {
+    "single_link_failure": [
+      "s2",
+      "s17"
+    ],
+    "recovery_scenario": [
+      "s2",
+      "s17"
+    ],
+    "link_flap_scenario": [
+      "s2",
+      "s17"
+    ],
+    "multi_fault_scenario": [
+      [
+        "s2",
+        "s17"
+      ],
+      [
+        "s3",
+        "s14"
+      ]
+    ]
+  }
+}

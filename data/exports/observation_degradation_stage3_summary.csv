@@ -1,0 +1,2 @@
+scenario_name,sync_mode,topology_name,topology_file,target_link,controller_app,background_traffic,configured_repeat_count,poll_interval,samples,detection_samples,detection_mean,detection_p95,detection_stddev,recovery_samples,recovery_mean,recovery_p95,recovery_stddev
+observation_degradation_scenario,polling,geant_backbone_8cities_stage3,data/topologies/geant_backbone_8cities_stage3.json,N/A,src.controller.topology_aware_switch,none,3,2.0,3,3,0.3805266666666667,0.309363,0.10899528299375572,0,,,

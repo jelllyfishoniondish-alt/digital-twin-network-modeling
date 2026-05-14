@@ -1,0 +1,384 @@
+{
+  "name": "geant2012_core12",
+  "description": "12-node connected core subset derived from real Geant2012 Topology Zoo data.",
+  "provenance": {
+    "import_source": "data/topologies/raw/Geant2012.graphml",
+    "import_format": "graphml",
+    "importer": "src.topology.importers.graphml_importer",
+    "subset_of": "geant2012_full",
+    "subset_source": "data/topologies/generated/geant2012_full_imported.json",
+    "selected_switches": [
+      "s1",
+      "s3",
+      "s5",
+      "s7",
+      "s8",
+      "s13",
+      "s14",
+      "s16",
+      "s20",
+      "s30",
+      "s36",
+      "s40"
+    ],
+    "subset_builder": "src.topology.subset_builder"
+  },
+  "switches": [
+    {
+      "name": "s1",
+      "dpid": "0000000000000001",
+      "city": "Austria",
+      "country": "Austria",
+      "latitude": 48.20849,
+      "longitude": 16.37208
+    },
+    {
+      "name": "s3",
+      "dpid": "0000000000000003",
+      "city": "Bulgaria",
+      "country": "Bulgaria",
+      "latitude": 42.69751,
+      "longitude": 23.32415
+    },
+    {
+      "name": "s5",
+      "dpid": "0000000000000005",
+      "city": "Switzerland",
+      "country": "Switzerland",
+      "latitude": 46.94809,
+      "longitude": 7.44744
+    },
+    {
+      "name": "s7",
+      "dpid": "0000000000000007",
+      "city": "Czech Republic",
+      "country": "Czech Republic",
+      "latitude": 50.08804,
+      "longitude": 14.42076
+    },
+    {
+      "name": "s8",
+      "dpid": "0000000000000008",
+      "city": "Germany",
+      "country": "Germany",
+      "latitude": 50.11667,
+      "longitude": 8.68333
+    },
+    {
+      "name": "s13",
+      "dpid": "000000000000000d",
+      "city": "France",
+      "country": "France",
+      "latitude": 48.85341,
+      "longitude": 2.3488
+    },
+    {
+      "name": "s14",
+      "dpid": "000000000000000e",
+      "city": "Greece",
+      "country": "Greece",
+      "latitude": 37.97945,
+      "longitude": 23.71622
+    },
+    {
+      "name": "s16",
+      "dpid": "0000000000000010",
+      "city": "Hungary",
+      "country": "Hungary",
+      "latitude": 47.49801,
+      "longitude": 19.03991
+    },
+    {
+      "name": "s20",
+      "dpid": "0000000000000014",
+      "city": "Italy",
+      "country": "Italy",
+      "latitude": 45.46427,
+      "longitude": 9.18951
+    },
+    {
+      "name": "s30",
+      "dpid": "000000000000001e",
+      "city": "Poland",
+      "country": "Poland",
+      "latitude": 52.41667,
+      "longitude": 16.96667
+    },
+    {
+      "name": "s36",
+      "dpid": "0000000000000024",
+      "city": "Slovakia",
+      "country": "Slovakia",
+      "latitude": 48.14816,
+      "longitude": 17.10674
+    },
+    {
+      "name": "s40",
+      "dpid": "0000000000000028",
+      "city": "United Kingdom",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574
+    }
+  ],
+  "hosts": [
+    {
+      "name": "h1",
+      "switch": "s1",
+      "ip": "10.0.0.1/24",
+      "mac": "00:00:00:00:00:01"
+    },
+    {
+      "name": "h3",
+      "switch": "s3",
+      "ip": "10.0.0.3/24",
+      "mac": "00:00:00:00:00:03"
+    },
+    {
+      "name": "h5",
+      "switch": "s5",
+      "ip": "10.0.0.5/24",
+      "mac": "00:00:00:00:00:05"
+    },
+    {
+      "name": "h7",
+      "switch": "s7",
+      "ip": "10.0.0.7/24",
+      "mac": "00:00:00:00:00:07"
+    },
+    {
+      "name": "h8",
+      "switch": "s8",
+      "ip": "10.0.0.8/24",
+      "mac": "00:00:00:00:00:08"
+    },
+    {
+      "name": "h13",
+      "switch": "s13",
+      "ip": "10.0.0.13/24",
+      "mac": "00:00:00:00:00:0d"
+    },
+    {
+      "name": "h14",
+      "switch": "s14",
+      "ip": "10.0.0.14/24",
+      "mac": "00:00:00:00:00:0e"
+    },
+    {
+      "name": "h16",
+      "switch": "s16",
+      "ip": "10.0.0.16/24",
+      "mac": "00:00:00:00:00:10"
+    },
+    {
+      "name": "h20",
+      "switch": "s20",
+      "ip": "10.0.0.20/24",
+      "mac": "00:00:00:00:00:14"
+    },
+    {
+      "name": "h30",
+      "switch": "s30",
+      "ip": "10.0.0.30/24",
+      "mac": "00:00:00:00:00:1e"
+    },
+    {
+      "name": "h36",
+      "switch": "s36",
+      "ip": "10.0.0.36/24",
+      "mac": "00:00:00:00:00:24"
+    },
+    {
+      "name": "h40",
+      "switch": "s40",
+      "ip": "10.0.0.40/24",
+      "mac": "00:00:00:00:00:28"
+    }
+  ],
+  "links": [
+    {
+      "src": "s3",
+      "dst": "s14",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.628,
+      "distance_km": 525.674,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s3",
+      "dst": "s16",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 3.153,
+      "distance_km": 630.654,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s5",
+      "dst": "s20",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.063,
+      "distance_km": 212.579,
+      "label": "CH-IT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s7",
+      "dst": "s36",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.455,
+      "distance_km": 291.064,
+      "label": "CZ-SK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s1",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 2.988,
+      "distance_km": 597.629,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s5",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.819,
+      "distance_km": 363.878,
+      "label": "DE-CH",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s8",
+      "dst": "s7",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.046,
+      "distance_km": 409.119,
+      "label": "DE-CZ",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s13",
+      "dst": "s5",
+      "bandwidth_mbps": 100,
+      "delay_ms": 2.175,
+      "distance_km": 435.015,
+      "label": "FR-CH",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s13",
+      "dst": "s40",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1.719,
+      "distance_km": 343.771,
+      "label": "FR-UK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s14",
+      "dst": "s1",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 6.414,
+      "distance_km": 1282.837,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s16",
+      "dst": "s36",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.807,
+      "distance_km": 161.415,
+      "label": "HU-SK",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s1",
+      "bandwidth_mbps": 100,
+      "delay_ms": 3.127,
+      "distance_km": 625.424,
+      "label": "IT-AT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s20",
+      "dst": "s14",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 7.307,
+      "distance_km": 1461.426,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s7",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 1.569,
+      "distance_km": 313.708,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s30",
+      "dst": "s8",
+      "bandwidth_mbps": 10000,
+      "delay_ms": 3.15,
+      "distance_km": 630.026,
+      "label": "10 Gbps",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    },
+    {
+      "src": "s36",
+      "dst": "s1",
+      "bandwidth_mbps": 100,
+      "delay_ms": 0.274,
+      "distance_km": 54.884,
+      "label": "SK-AT",
+      "source": "Imported GraphML topology",
+      "enabled": true
+    }
+  ],
+  "scenario_targets": {
+    "single_link_failure": [
+      "s3",
+      "s14"
+    ],
+    "recovery_scenario": [
+      "s3",
+      "s14"
+    ],
+    "link_flap_scenario": [
+      "s3",
+      "s14"
+    ],
+    "multi_fault_scenario": [
+      [
+        "s3",
+        "s14"
+      ],
+      [
+        "s3",
+        "s16"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "scenario_name": "recovery_scenario",
+    "sync_mode": "polling",
+    "topology_name": "geant_backbone_8cities_stage3",
+    "topology_file": "data/topologies/geant_backbone_8cities_stage3.json",
+    "target_link": "Paris-Frankfurt",
+    "controller_app": "src.controller.topology_aware_switch",
+    "background_traffic": "iperf_tcp",
+    "background_load_percent": 30,
+    "background_target_bandwidth_mbps": 30.0,
+    "configured_repeat_count": 1,
+    "poll_interval": 2.0,
+    "samples": 1,
+    "detection_samples": 1,
+    "detection_mean": 3.447071,
+    "detection_p95": 3.447071,
+    "detection_stddev": 0.0,
+    "recovery_samples": 1,
+    "recovery_mean": 2.938905,
+    "recovery_p95": 2.938905,
+    "recovery_stddev": 0.0
+  }
+]

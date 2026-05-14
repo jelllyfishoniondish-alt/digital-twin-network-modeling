@@ -1,0 +1,42 @@
+[
+  {
+    "scenario_name": "recovery_scenario",
+    "sync_mode": "polling",
+    "topology_name": "geant2012_core12",
+    "topology_file": "data/topologies/geant2012_core12.json",
+    "target_link": "Paris--London",
+    "controller_app": "src.controller.topology_aware_switch",
+    "background_traffic": "none",
+    "configured_repeat_count": 3,
+    "poll_interval": 2.0,
+    "samples": 3,
+    "detection_samples": 3,
+    "detection_mean": 0.7246516666666666,
+    "detection_p95": 0.679967,
+    "detection_stddev": 0.07546280468916829,
+    "recovery_samples": 3,
+    "recovery_mean": 2.2997093333333334,
+    "recovery_p95": 2.310061,
+    "recovery_stddev": 0.1605591166566244
+  },
+  {
+    "scenario_name": "recovery_scenario",
+    "sync_mode": "polling",
+    "topology_name": "geant_backbone_8cities_stage3",
+    "topology_file": "data/topologies/geant_backbone_8cities_stage3.json",
+    "target_link": "Paris--London",
+    "controller_app": "src.controller.topology_aware_switch",
+    "background_traffic": "none",
+    "configured_repeat_count": 3,
+    "poll_interval": 2.0,
+    "samples": 3,
+    "detection_samples": 3,
+    "detection_mean": 0.628344,
+    "detection_p95": 0.63328,
+    "detection_stddev": 0.18272934558703668,
+    "recovery_samples": 3,
+    "recovery_mean": 1.9908736666666667,
+    "recovery_p95": 1.975149,
+    "recovery_stddev": 0.10704773534996222
+  }
+]

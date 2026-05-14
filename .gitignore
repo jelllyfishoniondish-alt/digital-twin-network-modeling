@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local / tool-specific
+.claude/
+.env
+*.log
+
+# Runtime outputs
+data/snapshots/
+data/events/
+data/logs/
+
+# Jupyter
+.ipynb_checkpoints/

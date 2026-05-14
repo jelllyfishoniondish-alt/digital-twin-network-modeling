@@ -1,0 +1,2 @@
+scenario_name,topology_name,topology_file,target_link,controller_app,background_traffic,configured_repeat_count,poll_interval,samples,detection_samples,detection_mean,detection_p95,detection_stddev,recovery_samples,recovery_mean,recovery_p95,recovery_stddev
+recovery_scenario,geant_backbone_8cities_stage3,/home/yumeng/twin/data/topologies/geant_backbone_8cities_stage3.json,Paris-Frankfurt,src.controller.topology_aware_switch,icmp,1,4.0,3,3,1.2635806666666667,1.262376,0.01580992602414346,3,3.851687666666667,3.843751,0.02769131668150775

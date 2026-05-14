@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-09T16:45:31.364608+02:00",
+  "source_csvs": [
+    "data/exports/geant_backbone_8cities_stage3_recovery_scenario_none.csv",
+    "data/exports/geant_backbone_8cities_stage3_recovery_scenario_icmp.csv",
+    "data/exports/geant_backbone_8cities_stage3_recovery_scenario_iperf_tcp.csv"
+  ],
+  "records_csv": "data/exports/recovery_ground_truth_repeat10_local.csv",
+  "records_json": "data/exports/recovery_ground_truth_repeat10_local.json",
+  "summary_csv": "data/exports/recovery_ground_truth_repeat10_local_summary.csv",
+  "summary_json": "data/exports/recovery_ground_truth_repeat10_local_summary.json",
+  "records": 30,
+  "groups": 3,
+  "note": "Locally aggregated from completed per-traffic recovery ground-truth repeat=10 CSV files."
+}

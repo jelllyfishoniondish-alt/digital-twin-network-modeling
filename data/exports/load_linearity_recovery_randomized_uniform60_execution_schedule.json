@@ -1,0 +1,22 @@
+[
+  {"repeat_index": 1, "run_order": 1, "load_percent": 10, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep01_10pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 1, "run_order": 2, "load_percent": 50, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep01_50pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 1, "run_order": 3, "load_percent": 80, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep01_80pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 1, "run_order": 4, "load_percent": 30, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep01_30pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 2, "run_order": 5, "load_percent": 10, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep02_10pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 2, "run_order": 6, "load_percent": 30, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep02_30pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 2, "run_order": 7, "load_percent": 50, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep02_50pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 2, "run_order": 8, "load_percent": 80, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep02_80pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 3, "run_order": 9, "load_percent": 80, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep03_80pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 3, "run_order": 10, "load_percent": 30, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep03_30pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 3, "run_order": 11, "load_percent": 10, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep03_10pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 3, "run_order": 12, "load_percent": 50, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep03_50pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 4, "run_order": 13, "load_percent": 50, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep04_50pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 4, "run_order": 14, "load_percent": 80, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep04_80pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 4, "run_order": 15, "load_percent": 30, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep04_30pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 4, "run_order": 16, "load_percent": 10, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep04_10pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 5, "run_order": 17, "load_percent": 80, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep05_80pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 5, "run_order": 18, "load_percent": 10, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep05_10pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 5, "run_order": 19, "load_percent": 30, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep05_30pct.csv", "configured_repeat_count": 5},
+  {"repeat_index": 5, "run_order": 20, "load_percent": 50, "output_csv": "data/exports/load_linearity_recovery_randomized_uniform60_rep05_50pct.csv", "configured_repeat_count": 5}
+]

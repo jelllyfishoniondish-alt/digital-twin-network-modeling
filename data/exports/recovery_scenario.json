@@ -1,0 +1,12 @@
+[
+  {
+    "scenario_name": "recovery_scenario",
+    "fault_injection_timestamp": "2026-04-02T14:22:08.517115+00:00",
+    "detection_timestamp": "2026-04-02T14:22:08.536586+00:00",
+    "recovery_timestamp": "2026-04-02T14:22:10.589985+00:00",
+    "detection_delay": 0.019471,
+    "recovery_delay": 2.051576,
+    "poll_interval": 2.0,
+    "notes": "Expected LINK_DOWN followed by LINK_UP for s1-s2."
+  }
+]

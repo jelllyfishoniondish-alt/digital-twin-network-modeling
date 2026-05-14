@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Network Topology View</title>
+    <script src="https://unpkg.com/vis-network@9.1.9/dist/vis-network.min.js"></script>
+    <style>
+      :root {
+        --bg: #f4efe6;
+        --panel: rgba(255, 251, 245, 0.96);
+        --line: #d8c6a7;
+        --ink: #213038;
+        --muted: #697983;
+        --up: #1a7f5a;
+        --down: #b13f31;
+        --accent: #0b5c6b;
+        --highlight: #f0c75e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(11, 92, 107, 0.18), transparent 26%),
+          radial-gradient(circle at bottom right, rgba(240, 199, 94, 0.15), transparent 22%),
+          linear-gradient(180deg, #efe4d2 0%, var(--bg) 100%);
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(320px, 0.9fr);
+        gap: 18px;
+        padding: 18px;
+        min-height: 100vh;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 18px 42px rgba(25, 38, 46, 0.10);
+        overflow: hidden;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 20px 0;
+      }
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      #network {
+        height: calc(100vh - 110px);
+        min-height: 560px;
+      }
+
+      .sidebar {
+        display: grid;
+        gap: 18px;
+        align-content: start;
+      }
+
+      .section {
+        padding: 18px 20px;
+      }
+
+      .legend {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(33, 48, 56, 0.06);
+        font-size: 13px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+      }
+
+      .dot.up {
+        background: var(--up);
+      }
+
+      .dot.down {
+        background: var(--down);
+      }
+
+      .dot.new {
+        background: var(--highlight);
+      }
+
+      .event-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .event-card {
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(33, 48, 56, 0.08);
+        background: rgba(255, 255, 255, 0.72);
+        transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .event-card.new {
+        background: rgba(240, 199, 94, 0.18);
+        border-color: rgba(240, 199, 94, 0.8);
+        transform: translateX(-2px);
+      }
+
+      .event-type {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .event-meta {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .stat {
+        padding: 12px;
+        border-radius: 14px;
+        background: rgba(11, 92, 107, 0.07);
+      }
+
+      .stat-label {
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .stat-value {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 4px;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      @media (max-width: 980px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        #network {
+          height: 58vh;
+          min-height: 420px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <div class="hero">
+          <div>
+            <h1>Topology View</h1>
+            <div class="meta" id="topology-meta">Waiting for topology...</div>
+          </div>
+          <a href="/">Back to API dashboard</a>
+        </div>
+        <div id="network"></div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="panel section">
+          <h2>Legend</h2>
+          <div class="legend">
+            <span class="pill"><span class="dot up"></span> Link up</span>
+            <span class="pill"><span class="dot down"></span> Link down</span>
+            <span class="pill"><span class="dot new"></span> New event</span>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-label">Switches</div>
+              <div class="stat-value" id="switch-count">0</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Links</div>
+              <div class="stat-value" id="link-count">0</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel section">
+          <h2>Recent Events</h2>
+          <div class="event-list" id="event-list"></div>
+        </section>
+      </aside>
+    </main>
+
+    <script>
+      const nodeDataSet = new vis.DataSet([]);
+      const edgeDataSet = new vis.DataSet([]);
+      const eventContainer = document.getElementById("event-list");
+      const previousEventKeys = new Set();
+
+      const network = new vis.Network(
+        document.getElementById("network"),
+        { nodes: nodeDataSet, edges: edgeDataSet },
+        {
+          autoResize: true,
+          interaction: { hover: true },
+          physics: false,
+          nodes: {
+            shape: "dot",
+            size: 18,
+            font: { size: 15, face: "Avenir Next" },
+            borderWidth: 2,
+            color: {
+              background: "#f3f0ea",
+              border: "#0b5c6b",
+              highlight: { background: "#f0c75e", border: "#0b5c6b" },
+            },
+          },
+          edges: {
+            smooth: { type: "dynamic" },
+            width: 3,
+            selectionWidth: 5,
+            font: { align: "top", color: "#495965" },
+          },
+        },
+      );
+
+      function tooltipForSwitch(item) {
+        const portCount = (item.ports || []).length;
+        return [
+          `<strong>${item.name}</strong>`,
+          `dpid: ${item.dpid}`,
+          `flows: ${item.flow_count}`,
+          `ports: ${portCount}`,
+          item.city ? `city: ${item.city}` : null,
+        ].filter(Boolean).join("<br>");
+      }
+
+      function tooltipForLink(item) {
+        return [
+          `<strong>${item.label || `${item.src_dpid}-${item.dst_dpid}`}</strong>`,
+          `latency: ${item.latency_ms ?? "n/a"} ms`,
+          `bandwidth: ${item.bandwidth_mbps ?? "n/a"} Mbps`,
+          `distance: ${item.distance_km ?? "n/a"} km`,
+        ].join("<br>");
+      }
+
+      function projectPosition(latitude, longitude) {
+        const x = (longitude || 0) * 14;
+        const y = (latitude || 0) * -18;
+        return { x, y };
+      }
+
+      function renderTopology(topology) {
+        document.getElementById("topology-meta").textContent =
+          `Updated ${topology.timestamp || "unknown"} · ${topology.switches.length} switches · ${topology.links.length} links`;
+        document.getElementById("switch-count").textContent = topology.switches.length;
+        document.getElementById("link-count").textContent = topology.links.length;
+
+        const nodes = topology.switches.map((item) => {
+          const hasGeo = item.latitude !== null && item.latitude !== undefined
+            && item.longitude !== null && item.longitude !== undefined;
+          const base = {
+            id: item.dpid,
+            label: item.city || item.name,
+            title: tooltipForSwitch(item),
+          };
+          if (hasGeo) {
+            const position = projectPosition(item.latitude, item.longitude);
+            return { ...base, x: position.x, y: position.y, fixed: { x: true, y: true } };
+          }
+          return base;
+        });
+
+        const edges = topology.links.map((item) => ({
+          id: item.link_id,
+          from: item.src_dpid,
+          to: item.dst_dpid,
+          label: item.label || "",
+          title: tooltipForLink(item),
+          color: item.is_up ? "#1a7f5a" : "#b13f31",
+          dashes: !item.is_up,
+          width: item.is_up ? 3 : 4,
+        }));
+
+        nodeDataSet.update(nodes);
+        edgeDataSet.update(edges);
+
+        const nodeIds = new Set(nodes.map((item) => item.id));
+        const edgeIds = new Set(edges.map((item) => item.id));
+        nodeDataSet.getIds().filter((id) => !nodeIds.has(id)).forEach((id) => nodeDataSet.remove(id));
+        edgeDataSet.getIds().filter((id) => !edgeIds.has(id)).forEach((id) => edgeDataSet.remove(id));
+      }
+
+      function renderEvents(events) {
+        const nextKeys = new Set();
+        eventContainer.innerHTML = events.map((event) => {
+          const key = `${event.timestamp}:${event.event_type}:${event.entity_id}`;
+          const isNew = !previousEventKeys.has(key);
+          nextKeys.add(key);
+          return `
+            <article class="event-card ${isNew ? "new" : ""}">
+              <div class="event-type">${event.event_type}</div>
+              <div class="event-meta">${event.entity_id || ""}</div>
+              <div class="event-meta">${event.timestamp}</div>
+            </article>
+          `;
+        }).join("");
+
+        previousEventKeys.clear();
+        nextKeys.forEach((key) => previousEventKeys.add(key));
+      }
+
+      async function fetchJson(path) {
+        const response = await fetch(path);
+        return response.json();
+      }
+
+      async function refresh() {
+        const [topology, events] = await Promise.all([
+          fetchJson("/api/topology"),
+          fetchJson("/api/events?limit=10"),
+        ]);
+        renderTopology(topology);
+        renderEvents(events);
+      }
+
+      refresh();
+      setInterval(refresh, 3000);
+    </script>
+  </body>
+</html>
